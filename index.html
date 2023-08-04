@@ -1,1 +1,117 @@
-Halo nama saya Mona
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UX Designer Learning Roadmap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #007bff;
+      text-align: center;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section-title {
+      color: #007bff;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .step {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+    .step-number {
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    .step-text {
+      flex: 1;
+    }
+    .step-content {
+      display: none;
+      padding-left: 50px;
+      border-left: 2px solid #007bff;
+    }
+    .step-content p {
+      margin: 0;
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+      .step-content {
+        padding-left: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>UX Designer Learning Roadmap</h1>
+  </header>
+  <div class="container">
+    <div class="section">
+      <h2 class="section-title">1. Memahami Prinsip Desain dan Teori UX</h2>
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-text">Pelajari prinsip-prinsip desain visual, seperti tipografi, warna, dan tata letak.</div>
+      </div>
+      <div class="step-content">
+        <p>Pengenalan tentang desain visual dan bagaimana elemen-elemen seperti tipografi, warna, dan tata letak dapat mempengaruhi pengalaman pengguna.</p>
+        <p>Pelajari tentang psikologi warna dan bagaimana warna dapat mempengaruhi emosi dan persepsi pengguna.</p>
+        <p>Explore berbagai jenis tipografi dan bagaimana memilih jenis huruf yang tepat untuk mempengaruhi pembacaan dan pemahaman pengguna.</p>
+      </div>
+    </div>
+    <div class="section">
+      <h2 class="section-title">2. Mengenal Proses Desain UX</h2>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-text">Pelajari metodologi dan pendekatan desain UX, seperti Desain Berpusatkan Pengguna (User-Centered Design) dan Desain Berpusatkan Manusia (Human-Centered Design).</div>
+      </div>
+      <div class="step-content">
+        <p>Kenali tentang pendekatan berpusat pada pengguna dan pentingnya memahami kebutuhan dan perspektif pengguna dalam setiap langkah proses desain.</p>
+        <p>Pahami bagaimana melibatkan pengguna dalam proses desain melalui riset, wawancara, dan pengamatan.</p>
+        <p>Explore pendekatan berpusat pada manusia dan bagaimana memahami konteks sosial, kultural, dan ekonomi dalam desain.</p>
+      </div>
+    </div>
+    <!-- Lanjutkan dengan bagian lain dari peta pembelajaran -->
+  </div>
+  <script>
+    const steps = document.querySelectorAll('.step');
+    steps.forEach(step => {
+      step.addEventListener('click', () => {
+        step.nextElementSibling.classList.toggle('step-content');
+      });
+    });
+  </script>
+</body>
+</html>
